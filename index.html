@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Muestra el Nombre</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+</head>
+
+<body>
+<script>
+    function validar()
+        {
+           var valor =  document.getElementById("caja").value 
+		  if(valor=="valor" || isNaN(valor))
+            {
+             alert ("Hola  " + valor)
+            }
+			else
+			{
+				alert("Introduce tu nombre")
+			}
+        }
+    </script>
+  </head>
+  
+  <body>
+    <h1>Aplicacion 5</h1>
+    <p>Escribe tu nombre:</p>
+    <input id="caja" type="text">
+    <button type"button" onClick="validar()"> Enviar </button>
+    
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+</div>
+</div>
+
+</body>
+</html>
